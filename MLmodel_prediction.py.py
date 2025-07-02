@@ -79,12 +79,12 @@ model.fit(X_train, y_train)
 # Predict and evaluate
 y_pred = model.predict(X_test)
 
-print("✅ Accuracy:", accuracy_score(y_test, y_pred))
-print("\n✅ Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
-print("\n✅ Classification Report:\n", classification_report(y_test, y_pred))
+print(" Accuracy:", accuracy_score(y_test, y_pred))
+print(" Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
+print(" Classification Report:\n", classification_report(y_test, y_pred))
 
 print(f"""
-✅ Predictive Analysis Insights:
+Predictive Analysis Insights:
 - Logistic Regression model trained on Titanic dataset.
 - Accuracy: {accuracy_score(y_test, y_pred)*100:.2f}%
 - Features most correlated with survival: Sex, Pclass, Fare.
